@@ -20,9 +20,8 @@ schedule management
 ![ST Diagram](./images/screen.png)
 
 # 開発環境
-*Ruby 3.2.0
-
-*Rails 7.0.8
+* Ruby 3.2.0
+* Rails 7.0.8
 
 # ローカルでの動作方法
 
