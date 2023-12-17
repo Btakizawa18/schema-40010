@@ -48,12 +48,13 @@ schedule management
 
 ## schedules テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| title  | string     | null: false                    |
-| detail | string     | null: false                    |
-| goal   | text       | null: false                    |
-| user   | references | null: false, foreign_key: true |
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| title      | string     | null: false                    |
+| detail     | text       | null: false                    |
+| goal       | string     | null: false                    |
+| start_time | datetime   | null: false                    |
+| user       | references | null: false, foreign_key: true |
 
 ### Association
 
