@@ -1,24 +1,73 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+schedule management
 
-Things you may want to cover:
+# アプリケーション概要
 
-* Ruby version
+# URL
 
-* System dependencies
+# テスト用アカウント
 
-* Configuration
+# 利用方法
 
-* Database creation
+# 制作背景
 
-* Database initialization
+# 実装予定の機能
 
-* How to run the test suite
+# データベス設計
 
-* Services (job queues, cache servers, search engines, etc.)
+# 画面遷移図
 
-* Deployment instructions
+# 開発環境
 
-* ...
+# ローカルでの動作方法
+
+# 工夫したポイント
+
+# 改善点
+
+# 制作時間
+
+# テーブル設計
+
+## users テーブル
+
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
+| nickname           | string | null: false |
+| profile            | text   | null: false |
+
+### Association
+
+- has_many :schedules
+- has_many :comments
+
+## schedules テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| title  | string     | null: false                    |
+| detail | string     | null: false                    |
+| goal   | text       | null: false                    |
+| user   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_many :comments
+
+## comments テーブル
+
+| Column   | Type       | Options                        |
+| ---------| ---------- | ------------------------------ |
+| content  | text       | null: false                    |
+| user     | references | null: false, foreign_key: true |
+| schedule | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :schedule
