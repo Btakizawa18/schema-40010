@@ -15,7 +15,8 @@ schedule management
 
 # 実装予定の機能
 
-# データベス設計
+# データベース設計
+![ER Diagram](./images/test.png)
 
 # 画面遷移図
 
