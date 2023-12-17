@@ -19,6 +19,7 @@ schedule management
 ![ER Diagram](./images/test.png)
 
 # 画面遷移図
+![ST Diagram](./images/screen.png)
 
 # 開発環境
 
