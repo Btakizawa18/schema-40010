@@ -19,7 +19,7 @@
                 <mxCell id="7" value="profile" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="2" vertex="1">
                     <mxGeometry y="120" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="schedules" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#CCCCCC;fontColor=#000000;fillColor=#CCFFFF;gradientColor=none;" parent="1" vertex="1">
+                <mxCell id="8" value="plans" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#CCCCCC;fontColor=#000000;fillColor=#CCFFFF;gradientColor=none;" parent="1" vertex="1">
                     <mxGeometry x="920" y="80" width="160" height="176" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="title" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="8" vertex="1">
@@ -57,7 +57,7 @@
                 <mxCell id="16" value="user" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="14" vertex="1">
                     <mxGeometry y="56" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="schedule" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="14" vertex="1">
+                <mxCell id="17" value="plan" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="14" vertex="1">
                     <mxGeometry y="86" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=none;html=1;fontColor=#000000;strokeColor=none;endArrow=ERmany;endFill=0;" parent="1" edge="1">

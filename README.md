@@ -44,10 +44,10 @@ schedule management
 
 ### Association
 
-- has_many :schedules
+- has_many :plans
 - has_many :comments
 
-## schedules テーブル
+## plans テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
@@ -64,13 +64,13 @@ schedule management
 
 ## comments テーブル
 
-| Column   | Type       | Options                        |
-| ---------| ---------- | ------------------------------ |
-| content  | text       | null: false                    |
-| user     | references | null: false, foreign_key: true |
-| schedule | references | null: false, foreign_key: true |
+| Column  | Type       | Options                        |
+| --------| ---------- | ------------------------------ |
+| content | text       | null: false                    |
+| user    | references | null: false, foreign_key: true |
+| plan    | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :schedule
+- belongs_to :plan
