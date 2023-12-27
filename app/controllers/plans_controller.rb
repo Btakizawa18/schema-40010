@@ -1,5 +1,6 @@
 class PlansController < ApplicationController
   def index
+    @plans = Plan.includes(:user)
   end
 
   def new
@@ -11,6 +12,7 @@ class PlansController < ApplicationController
     if @plan.save
       redirect_to root_path
     else
+      @plans = Plan.includes(:user)
       render :new, status: :unprocessable_entity
     end
   end
