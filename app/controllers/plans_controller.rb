@@ -3,9 +3,16 @@ class PlansController < ApplicationController
   end
 
   def new
+    @plan = Plan.new
   end
 
   def create
+    @plan = Plan.new(plan_params)
+    if @plan.save
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
