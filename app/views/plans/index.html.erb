@@ -13,5 +13,17 @@
     <div class="card__wrapper">
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     </div>
+    <br>
+    <div class="col-md-8">
+      <%= month_calendar events: @plans do |date, plans| %>
+        <%= date.day %>
+
+        <% plans.each do |plan| %>
+          <div>
+            <%= link_to plan.title, plan %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </main>
