@@ -1,0 +1,59 @@
+<main class="main">
+  <div class="inner">
+    <div class="plan__wrapper">
+      <p class="plan__hedding">
+        <%= @plan.title %>
+      </p>
+      <%= link_to "by #{@plan.user.name}", root_path, class: :plan__user %>
+      <%# 投稿者とログインしているユーザーが同じであれば以下を表示する %>
+      <% if user_signed_in? && current_user.id == @plan.user.id %>
+        <div class="plan__manage">
+          <%= link_to "編集する", edit_plan_path(@plan), class: :plan__btn %>
+          <%= link_to "削除する", plan_path(@plan), data: { turbo_method: :delete }, class: :plan__btn %>
+        </div>
+      <% end %>
+      <%# // 投稿者とログインしているユーザーが同じであれば上記を表示する %>
+      <div class="plan__body">
+        <div class="plan__detail">
+          <p class="detail__title">詳細</p>
+          <p class="detail__message">
+            <%= @plan.detail %>
+          </p>
+        </div>
+        <div class="plan__detail">
+          <p class="detail__title">目標</p>
+          <p class="detail__message">
+            <%= @plan.goal %>
+          </p>
+        </div>
+        <div class="plan__detail">
+          <p class="detail__title">日付</p>
+          <p class="detail__message">
+            <%= @plan.start_time %>
+          </p>
+        </div>
+      </div>
+      <div class="plan__comments">
+        <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
+          <%# <%= form_with model: モデル名,local: true do |f|%>
+            <div class="field">
+              <%# <%= f.label :hoge, "コメント" %><br />
+              <%# <%= f.text_field :hoge, id:"comment_content" %>
+            </div>
+            <div class="actions">
+              <%# <%= f.submit "送信する", class: :form__btn  %>
+            </div>
+          <%# <% end %>
+        <%# // ログインしているユーザーには上記を表示する %>
+        <ul class="comments_lists">
+          <%# 投稿に紐づくコメントを一覧する処理を記述する %>
+            <li class="comments_list">
+              <%# <%= " コメントのテキスト "%>
+              <%# <%= link_to "（ ユーザー名 ）", root_path, class: :comment_user %>
+            </li>
+          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>

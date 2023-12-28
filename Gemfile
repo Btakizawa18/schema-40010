@@ -82,3 +82,10 @@ end
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+
+gem "simple_calendar", "~> 2.4"
+
+gem "sassc-rails"
