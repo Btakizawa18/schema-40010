@@ -4,7 +4,9 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to plan_path(@comment.plan)
     else
-      render :new, status: :unprocessable_entity
+      @plan = @comment.plan
+      @comments = @plan.comments
+      render "plans/show"
     end
   end
   
