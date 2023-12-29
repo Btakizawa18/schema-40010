@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card__body">
+    <%= link_to plan.title, plan_path(plan), class: :card__title%>
+    <p class="card__summary">
+      <%= plan.start_time %>
+    </p>
+    <%= link_to "by #{plan.user.name}", user_path(plan.user), class: :card__user %>
+  </div>
+</div>
