@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :plans
+  has_many :comments, dependent: :destroy
 
   with_options presence: true do
     # 半角英数字（空文字NG）以外の場合には、メッセージを出す

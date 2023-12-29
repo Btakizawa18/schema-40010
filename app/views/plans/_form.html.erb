@@ -1,4 +1,6 @@
 <%= form_with model: plan, local: true do |f|%>
+  <%= render 'shared/error_messages', model: f.object %>
+  
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
     <%= f.text_field :title, id:"plan_title" %>
@@ -15,7 +17,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :start_time, "時間" %><br />
+    <%= f.label :start_time, "日付" %><br />
     <%= f.date_select :start_time, id:"plan_start_time" %>
   </div>
 

@@ -1,6 +1,7 @@
 class Plan < ApplicationRecord
   # テーブルとのアソシエーション
   belongs_to :user
+  has_many :comments, dependent: :destroy
 
   # active_storageとのアソシエーション
   has_one_attached :image

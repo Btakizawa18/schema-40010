@@ -1,17 +1,13 @@
-<h1>トップページ</h1>
-
 <main class="main">
   <div class="inner">
     <%# ログインしているときは以下を表示する %>
     <% if user_signed_in? %>
       <div class="greeting">
-        <%= "こんにちは、#{current_user.name}さん" %>
-        <%# <%= link_to "こんにちは、#{current_user.name}さん", root_path, class: :greeting__link %> %>
+        <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user), class: :greeting__link %>
       </div>
     <%# // ログインしているときは上記を表示する %>
     <% end %>
     <div class="card__wrapper">
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     </div>
     <br>
     <div class="col-md-8">
