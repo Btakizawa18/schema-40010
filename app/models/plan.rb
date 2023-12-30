@@ -13,4 +13,10 @@ class Plan < ApplicationRecord
     validates :goal
     validates :start_time
   end
+
+  def self.today_schedule
+    today = Date.today
+    schedules = Plan.where(start_time: today.beginning_of_day..today.end_of_day)
+    schedules.present? ? schedules.first: nil
+  end
 end

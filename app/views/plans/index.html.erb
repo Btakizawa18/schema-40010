@@ -7,6 +7,11 @@
       </div>
     <%# // ログインしているときは上記を表示する %>
     <% end %>
+    <% if @today_schedule.present? %>
+      <%= link_to "本日は、#{@today_schedule.title}という予定があります", plan_path(@today_schedule.id), class: :greeting__link %>
+    <% else %>
+      <p>本日の予定はありません</p>
+    <% end %>
     <div class="card__wrapper">
     </div>
     <br>

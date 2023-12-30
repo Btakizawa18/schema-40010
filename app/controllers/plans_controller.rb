@@ -5,6 +5,7 @@ class PlansController < ApplicationController
 
   def index
     @plans = Plan.includes(:user)
+    @today_schedule = Plan.today_schedule
   end
 
   def new
