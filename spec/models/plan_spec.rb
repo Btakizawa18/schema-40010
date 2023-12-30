@@ -41,4 +41,19 @@ RSpec.describe Plan, type: :model do
       end
     end
   end
+  
+  describe '.today_schedule' do
+    context '今日のスケジュールが存在する場合' do
+      it '今日の最初のスケジュールを返す' do
+        today_schedule = FactoryBot.create(:plan, user: @user, start_time: Time.zone.now)
+        expect(Plan.today_schedule).to eq(today_schedule)
+      end
+    end
+  
+    context '今日のスケジュールが存在しない場合' do
+      it 'nilを返す' do
+        expect(Plan.today_schedule).to be_nil
+      end
+    end
+  end
 end
