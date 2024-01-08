@@ -261,3 +261,27 @@ a {
   list-style: circle;
   color: rgb(182, 48, 0);
 }
+
+/* タブレット対応 */
+@media (max-width: 1024px) {
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .page-heading {
+    font-size: 24px;
+  }
+}
+
+ /* スマホ表示 */
+ @media (max-width: 599px) {
+  .logo {
+    width: 120px;
+  }
+  .page-heading {
+    font-size: 20px;
+  }
+  .table{
+    width: 100%;
+  }
+}
