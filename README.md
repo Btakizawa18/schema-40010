@@ -51,10 +51,10 @@ schedule management
 * Render
 
 # ローカルでの動作方法
-以下のコマンドを順に実行
-% git clone https://github.com/Btakizawa18/schema-40010.git
-% cd schema-40010
-% bundle install
+以下のコマンドを順に実行  
+% git clone https://github.com/Btakizawa18/schema-40010.git  
+% cd schema-40010  
+% bundle install  
 
 # 工夫したポイント
 
