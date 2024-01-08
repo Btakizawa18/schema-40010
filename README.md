@@ -25,7 +25,7 @@ schedule management
 
 # 制作背景
 プログラミングスクール受講中に転職活動中にも活用できるアプリケーションはないかと考え、家族や知人にヒアリングをした結果、スケジュールを共有でき、コメントが残せるアプリケーションならば
-転職活動にも活用できると推測し、スケジュールを投稿しユーザー間でコミュニケーション可能なスケジュール管理アプリの開発をしました。
+転職活動にも活用できると考え、スケジュールを投稿しユーザー間でコミュニケーション可能なスケジュール管理アプリの開発をしました。
 
 # 洗い出した要件
 [要件定義](https://docs.google.com/spreadsheets/d/1Szl6oZwjmIG_9H3FS8KCtIY3TayJKj1gKJsHdQzP2Rw/edit#gid=982722306)
@@ -51,6 +51,10 @@ schedule management
 * Render
 
 # ローカルでの動作方法
+以下のコマンドを順に実行
+% git clone https://github.com/Btakizawa18/schema-40010.git
+% cd schema-40010
+% bundle install
 
 # 工夫したポイント
 
