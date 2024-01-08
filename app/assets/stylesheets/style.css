@@ -125,7 +125,12 @@ a {
 .greeting__link{
   text-decoration: underline;
 }
-.page-heading {
+.greeting__link2{
+  text-decoration: underline;
+  font-size: 25px;
+  color: red;
+}
+.page-heading{
   font-size: 30px;
   margin-bottom: 28px;
 }
