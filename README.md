@@ -10,8 +10,8 @@ schedule management
 [オリジナルアプリ](https://schema-40010.onrender.com)
 
 # テスト用アカウント
-* Basic認証パスワード： 1192
 * Basic認証ID： kamakura
+* Basic認証パスワード： 1192
 
 # 利用方法
 ## スケジュール投稿
@@ -118,3 +118,13 @@ schedule management
 
 - belongs_to :user
 - belongs_to :plan
+
+# アプリの操作に関する画像
+## 新規登録
+https://gyazo.com/d7d5620459f8b6d5fcfaa234f2694f2b
+
+## ログイン
+https://gyazo.com/487087ab9e1b928ca3d1a20b0cb79f55
+
+## スケジュール投稿
+https://gyazo.com/2130bdf2bca9653e024554482cb9ca81
