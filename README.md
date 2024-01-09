@@ -121,10 +121,10 @@ schedule management
 
 # アプリの操作に関する画像
 ## 新規登録
-https://gyazo.com/d7d5620459f8b6d5fcfaa234f2694f2b
+![新規登録]https://gyazo.com/d7d5620459f8b6d5fcfaa234f2694f2b
 
 ## ログイン
-https://gyazo.com/487087ab9e1b928ca3d1a20b0cb79f55
+![ログイン]https://gyazo.com/487087ab9e1b928ca3d1a20b0cb79f55
 
 ## スケジュール投稿
-https://gyazo.com/2130bdf2bca9653e024554482cb9ca81
+![スケジュール投稿]https://gyazo.com/2130bdf2bca9653e024554482cb9ca81
