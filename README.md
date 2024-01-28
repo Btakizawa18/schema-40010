@@ -12,6 +12,8 @@ schedule management
 # テスト用アカウント
 * Basic認証ID： kamakura
 * Basic認証パスワード： 1192
+* テスト用メールアドレス: test00@test.com
+* テスト用パスワード: abc000
 
 # 利用方法
 ## スケジュール投稿
